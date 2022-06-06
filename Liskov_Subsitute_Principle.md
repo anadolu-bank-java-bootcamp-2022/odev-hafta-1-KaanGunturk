@@ -92,4 +92,5 @@ public static void main(String[] args) {
     }
 
 }
+
 LSP’ye uygunluk tam olarak sınıflardan beklenen davranışları karşılayabilecek bir hiyerarşi düzeni oluşturarak sınıf yapılarımızı geliştirmektir.
