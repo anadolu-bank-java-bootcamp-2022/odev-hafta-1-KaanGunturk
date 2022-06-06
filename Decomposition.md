@@ -8,7 +8,7 @@ Bu kısımda bir problemin nasıl alınacağını,ayrıştırılacağını ve on
 
 Bir çalışanın haftalık ücreti, ücret oranına ve haftada çalışılan saat sayısına bağlıdır. Çalışanlar haftada en az bir saat, en fazla 60 saat çalışırlar. 40 saatten fazla çalışan bir çalışana, 40'ın üzerinde çalışılan tüm saatler için normal ücretin 1,5 katı ödenir. Normal ücret, saat başına 10 sterlindir. Herhangi bir çalışanın haftalık ücretini hesaplamak ve çıktısını almak için bir program gereklidir.
 
-    Problemi Decompositon yöntemi kullanarak ayrıştırma;
+     Problemi Decompositon yöntemi kullanarak ayrıştırma;
 
 1-Kaç saat çalışıldığını öğrenin.
 

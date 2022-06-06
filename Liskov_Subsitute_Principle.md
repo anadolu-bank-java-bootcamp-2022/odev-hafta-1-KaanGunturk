@@ -96,10 +96,10 @@ public class Test {
 public static void main(String[] args) {
 
         Shape rectangle=new Rectangle(10,5);
-        System.out.println(rectangle.area()); //50
+        System.out.println(rectangle.area()); // 50
 
         Shape square=new Square(5);
-        System.out.println(square.area()); //25
+        System.out.println(square.area()); // 25
     }
 
 }
