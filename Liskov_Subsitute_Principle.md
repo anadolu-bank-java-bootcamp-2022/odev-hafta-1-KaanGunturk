@@ -1,4 +1,4 @@
-    Liskov Subsitute prensibine göre alt seviye sınıflardan oluşan nesnelerin/sınıfların, ana(üst) sınıfın nesneleri ile yer değiştirdikleri zaman, aynı davranışı sergilemesi gerekmektedir. Türetilen sınıflar, türeyen sınıfların tüm özelliklerini kullanabilmelidir.
+Liskov Subsitute prensibine göre alt seviye sınıflardan oluşan nesnelerin/sınıfların, ana(üst) sınıfın nesneleri ile yer değiştirdikleri zaman, aynı davranışı sergilemesi gerekmektedir. Türetilen sınıflar, türeyen sınıfların tüm özelliklerini kullanabilmelidir.
 
 Varolan ve LSP’ye uymayan Kare ve dikdörtgen örneğiyle başlayalım.
 
@@ -16,10 +16,9 @@ public class Square extends Rectangle {
         super.setHeight(height);
         super.setWidth(height);
     }
+    }
 
-}
-
-    Matematiksel olarak bir kareyi de bir dikdörtgen olarak kabul edebiliriz,ama bu prensibe göre yazılımda kabul edilemez.
+Matematiksel olarak bir kareyi de bir dikdörtgen olarak kabul edebiliriz,ama bu prensibe göre yazılımda kabul edilemez.
 
 @Test
 public void testRectangleArea() throws Exception {
@@ -29,21 +28,22 @@ rectangle.setHeight(4);
 assertEquals(80, rectangle.area());
 }
 
-    Kareyi de beklendiği yerde dikdörtgen olarak kullanılabilir hale getirmiş olduk. Ancak böyle yaparak dikdörtgen davranışındaki beklentiyi bozuyoruz. Çünkü karenin sadece tek bir kenar   bilgisi yeterlidir yada uzunluk ve en bilgisi aynı olmak durumundadır.
+Kareyi de beklendiği yerde dikdörtgen olarak kullanılabilir hale getirmiş olduk. Ancak böyle yaparak dikdörtgen davranışındaki beklentiyi bozuyoruz. Çünkü karenin sadece tek bir kenar bilgisi yeterlidir yada uzunluk ve en bilgisi aynı olmak durumundadır.
 
-    Matematiksel olarak karenin dikdörtgenden türediğini varsayabiliriz. Ama davranışsal olarak Kare Dikdörtgenin yerine geçmez, bu hiyerarşi Liskov prensibini (LSP) ihlal eder.O
-    yüzden bunu LSP'ye uygun ahle getirmemiz lazım.
+Matematiksel olarak karenin dikdörtgenden türediğini varsayabiliriz. Ama davranışsal olarak Kare Dikdörtgenin yerine geçmez, bu hiyerarşi Liskov prensibini (LSP) ihlal eder.O
+yüzden bunu LSP'ye uygun ahle getirmemiz lazım.
 
-    Bir karenin yüksekliğinin / genişliğinin değiştirilmesi, bir dikdörtgenin yüksekliğinin / genişliğinin değiştirilmesinden daha farklı davranır. Her ikiside birer şekli temsil  eder. Buradan yola çıkarak şekil interface’ini oluşturalım.
+Bir karenin yüksekliğinin / genişliğinin değiştirilmesi, bir dikdörtgenin yüksekliğinin / genişliğinin değiştirilmesinden daha farklı davranır. Her ikiside birer şekli temsil eder. Buradan yola çıkarak şekil interface’ini oluşturalım.
 
 public interface Shape {
-long area();
+
+     long area();
+
 }
 
 Kare bir şekildir o halde Square adlı bir sınıf yaratarak Shape’den implement edebiliriz.
 
 public class Square implements Shape {
-
 private int size;
 
 public Square(int size) {
