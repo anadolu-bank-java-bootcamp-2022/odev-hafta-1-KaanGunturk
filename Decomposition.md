@@ -1,14 +1,10 @@
 Bu sayfada decomposition hakkında yaptığım araştırmayı paylaşacağım.
 
-    Decompositon ,karmaşık bir problemi veya sistemi daha yönetilebilir hale getirmek için anlaşılması daha kolay olan küçük parçalara ayırmayı aynı zamanda programlama ve bakım
+Decompositon ,karmaşık bir problemi veya sistemi daha yönetilebilir hale getirmek için anlaşılması daha kolay olan küçük parçalara ayırmayı aynı zamanda programlama ve bakım yapılması için kolaylık sağlayan bilgisayar bilimidir.Daha sonra,küçük paröalar inccelenip çözülebilir veya üzerinde çalışılması daha kolay olduğu için ayrı ayrı tasarlanabilir.
 
-yapılması için kolaylık sağlayan bilgisayar bilimidir.Daha sonra,küçük paröalar inccelenip çözülebilir veya üzerinde çalışılması daha kolay olduğu için ayrı ayrı tasarlanabilir.
+Decomposition kullanma nedenimiz eğer problem ayrıştırılmazsa çözülmesi çok daha zordur.Aynı zamanda birçok farklı aşamayla uğraşmak,bir problemi birkaç küçük probleme bölüp her birinin teker teker çözmekten çok daha zordur.Problemi daha küçük parçalara bölmek, her küçük problemin detaylı incenebileceği anlamına gelir.
 
-    Decomposition kullanma nedenimiz eğer problem ayrıştırılmazsa çözülmesi çok daha zordur.Aynı zamanda birçok farklı aşamayla uğraşmak,bir problemi birkaç küçük probleme bölüp her
-
-birinin teker teker çözmekten çok daha zordur.Problemi daha küçük parçalara bölmek, her küçük problemin detaylı incenebileceği anlamına gelir.
-
-    Bu kısımda bir problemin nasıl alınacağını,ayrıştırılacağını ve onu çözmek için bir algoritmanın nasıl tasarlanacağını inceleyeceğiz.
+Bu kısımda bir problemin nasıl alınacağını,ayrıştırılacağını ve onu çözmek için bir algoritmanın nasıl tasarlanacağını inceleyeceğiz.
 
 Bir çalışanın haftalık ücreti, ücret oranına ve haftada çalışılan saat sayısına bağlıdır. Çalışanlar haftada en az bir saat, en fazla 60 saat çalışırlar. 40 saatten fazla çalışan bir çalışana, 40'ın üzerinde çalışılan tüm saatler için normal ücretin 1,5 katı ödenir. Normal ücret, saat başına 10 sterlindir. Herhangi bir çalışanın haftalık ücretini hesaplamak ve çıktısını almak için bir program gereklidir.
 
@@ -68,8 +64,8 @@ hours_worked = NORMAL_HOURS
 end if
 
 {calculate pay}
-normal_pay = hours_worked _ HOURLY_RATE
-overtime_pay = overtime_hours _ OVERTIME_RATE
+normal*pay = hours_worked * HOURLY*RATE
+overtime_pay = overtime_hours * OVERTIME_RATE
 total_pay = normal_pay + overtime_pay
 
 {output result}
