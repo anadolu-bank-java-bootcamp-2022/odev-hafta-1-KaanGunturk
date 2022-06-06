@@ -11,10 +11,15 @@ Bir çalışanın haftalık ücreti, ücret oranına ve haftada çalışılan sa
     Problemi Decompositon yöntemi kullanarak ayrıştırma;
 
 1-Kaç saat çalışıldığını öğrenin.
+
 2-Bu saatlerden kaçının normal oranda ödeneceğini öğrenin.
+
 3-Bu saatlerden kaçının, varsa, fazla mesai oranında ödeneceğini öğrenin.
+
 4-Normal saatler için ödemeyi hesaplayın Fazla mesai saatleri için ödemeyi hesaplayın.
+
 5-Normal ve fazla mesai saatleri için toplam ödemeyi hesaplayın.
+
 6-Sonucu yazın.
 
     Variables ve Constants
@@ -40,15 +45,24 @@ NORMAL_HOURS Integer
 
 #variable ve constant tanımlama
 
-Set HOURLY_RATE = 10.00  
+Set HOURLY_RATE = 10.00
+
 Set OVERTIME_RATE = 15.00
+
 Set MAX_HOURS = 60
+
 Set MIN_HOURS = 1
+
 Set NORMAL_HOURS = 40
+
 Set hours_worked = 0
+
 Set overtime_hours = 0
+
 Set normal_pay = 0
+
 Set overtime_pay = 0
+
 total_pay = 0
 
 {input number of hours worked}
@@ -101,8 +115,11 @@ Enter the number of hours worked: 45
 Normal pay rate: £10
 
 Overtime pay rate: £15
+
 Hours worked: 40
+
 Overtime hours worked: 5
+
 Total pay: £475
 
 Problem decomposition kullanılarak tamamen ayrıştırıldı ve algotitma tasarlandı.
