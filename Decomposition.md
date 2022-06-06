@@ -26,22 +26,31 @@ Bir çalışanın haftalık ücreti, ücret oranına ve haftada çalışılan sa
 
 Yukarıdaki çözüm aşağıdakı variables değerleri gerektirecektir.Program çalıştırıldığında bu değerler değişecektir.
 
-Variable Data type
+Variable -> Data type
 
-hours_worked Float
-overtime_hours Float
-normal_pay Float
-overtime_pay Float
-total_pay Float
+hours_worked -> Float
+
+overtime_hours -> Float
+
+normal_pay -> Float
+
+overtime_pay -> Float
+
+total_pay -> Float
 
 Asağıdaki constant değerler kullanılacaktır.Program çalıştırıldığında bu değerler değişmeyecektir.
 
-Constant Data type
-HOURLY_RATE Float
-OVERTIME_RATE Float
-MAX_HOURS Integer
-MIN_HOURS Integer
-NORMAL_HOURS Integer
+Constant -> Data type
+
+HOURLY_RATE -> Float
+
+OVERTIME_RATE -> Float
+
+MAX_HOURS -> Integer
+
+MIN_HOURS ->Integer
+
+NORMAL_HOURS -> Integer
 
 #variable ve constant tanımlama
 
