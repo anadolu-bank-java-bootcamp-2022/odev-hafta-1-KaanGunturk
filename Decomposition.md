@@ -66,32 +66,47 @@ Set overtime_pay = 0
 total_pay = 0
 
 {input number of hours worked}
+
 while hours_worked < MIN_HOURS OR hours_worked > MAX_HOURS
+
 output "Enter the number of hours worked"
 input hours_worked
+
 end while
 
 {calculate overtime hours}
+
 if hours_worked > NORMAL_HOURS then
+
 overtime_hours = hours_worked - NORMAL_HOURS
+
 hours_worked = NORMAL_HOURS
+
 end if
 
 {calculate pay}
-normal*pay = hours_worked * HOURLY*RATE
-overtime_pay = overtime_hours * OVERTIME_RATE
+
+normal*pay = hours_worked * HOURLY\*RATE
+
+overtime_pay = overtime_hours \* OVERTIME_RATE
+
 total_pay = normal_pay + overtime_pay
 
 {output result}
 Output "Normal pay rate: £" < HOURLY_RATE
+
 Output "Overtime pay rate: £" < OVERTIME_RATE
+
 Output "Hours worked: " < hours_worked
+
 Output "Overtime hours worked: " < overtime_hours
+
 Output "Total pay: £" < total_pay
 
 End
 
 Çıkış değerleri
+
 Girillen değerlere göre çıktı aşağıdaki gibi olacaktır.
 
 Örnek 1: 4 hours
