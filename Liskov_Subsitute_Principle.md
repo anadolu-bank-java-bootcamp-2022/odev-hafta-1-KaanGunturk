@@ -36,9 +36,7 @@ yüzden bunu LSP'ye uygun ahle getirmemiz lazım.
 Bir karenin yüksekliğinin / genişliğinin değiştirilmesi, bir dikdörtgenin yüksekliğinin / genişliğinin değiştirilmesinden daha farklı davranır. Her ikiside birer şekli temsil eder. Buradan yola çıkarak şekil interface’ini oluşturalım.
 
 public interface Shape {
-
-     long area();
-
+long area();
 }
 
 Kare bir şekildir o halde Square adlı bir sınıf yaratarak Shape’den implement edebiliriz.
