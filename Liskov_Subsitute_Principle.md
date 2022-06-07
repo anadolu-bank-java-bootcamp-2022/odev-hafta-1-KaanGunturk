@@ -30,10 +30,10 @@ public void testRectangleArea() throws Exception {
 
 }
 
-Kareyi de beklendiği yerde dikdörtgen olarak kullanılabilir hale getirmiş olduk. Ancak böyle yaparak dikdörtgen davranışındaki beklentiyi bozuyoruz. Çünkü karenin sadece tek bir kenar bilgisi yeterlidir yada uzunluk ve en bilgisi aynı olmak durumundadır.
+Kareyi de beklendiği yerde dikdörtgen olarak kullanılabilir hale getirmiş olduk, ancak böyle yaparak dikdörtgen davranışındaki beklentiyi bozuyoruz. Çünkü karenin sadece tek bir kenar bilgisi yeterlidir.
 
-Matematiksel olarak karenin dikdörtgenden türediğini varsayabiliriz. Ama davranışsal olarak Kare Dikdörtgenin yerine geçmez, bu hiyerarşi Liskov prensibini (LSP) ihlal eder.O
-yüzden bunu LSP'ye uygun ahle getirmemiz lazım.
+Matematiksel olarak karenin dikdörtgenden türediğini varsayabiliriz, ama davranışsal olarak Kare Dikdörtgenin yerine geçmez, bu hiyerarşi Liskov prensibini (LSP) ihlal eder.O
+yüzden bunu LSP'ye uygun hale getirmemiz gerekir.
 
 Bir karenin yüksekliğinin / genişliğinin değiştirilmesi, bir dikdörtgenin yüksekliğinin / genişliğinin değiştirilmesinden daha farklı davranır. Her ikiside birer şekli temsil eder. Buradan yola çıkarak şekil interface’ini oluşturalım.
 
@@ -89,7 +89,7 @@ public class Rectangle implements Shape {
 
 }
 
-Artık Kare ve Dikdörtgen kendi davranışlarına sahip oldu. Ve her biri ayrı şekil olarak kabul ediliyor. Böylece alan hesaplama her bir şekile özgü matematiksel bir işlem içerebiliyor.
+Artık Kare ve Dikdörtgen kendi davranışlarına sahip oldu, ve her biri ayrı şekil olarak kabul ediliyor. Böylece alan hesaplama her bir şekile özgü matematiksel bir işlem içerebiliyor.
 
 public class Test {
 
