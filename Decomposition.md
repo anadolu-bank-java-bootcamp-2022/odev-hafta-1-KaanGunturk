@@ -1,6 +1,6 @@
 Bu sayfada decomposition hakkında yaptığım araştırmayı paylaşacağım.
 
-Decompositon ,karmaşık bir problemi veya sistemi daha yönetilebilir hale getirmek için anlaşılması daha kolay olan küçük parçalara ayırmayı aynı zamanda programlama ve bakım yapılması için kolaylık sağlayan bilgisayar bilimidir.Daha sonra,küçük paröalar inccelenip çözülebilir veya üzerinde çalışılması daha kolay olduğu için ayrı ayrı tasarlanabilir.
+Decompositon ,karmaşık bir problemi veya sistemi daha yönetilebilir hale getirmek için anlaşılması daha kolay olan küçük parçalara ayırmayı aynı zamanda programlama ve bakım yapılması için kolaylık sağlayan bilgisayar bilimidir.Daha sonra,küçük parçalar inccelenip çözülebilir veya üzerinde çalışılması daha kolay olduğu için ayrı ayrı tasarlanabilir.
 
 Decomposition kullanma nedenimiz eğer problem ayrıştırılmazsa çözülmesi çok daha zordur.Aynı zamanda birçok farklı aşamayla uğraşmak,bir problemi birkaç küçük probleme bölüp her birinin teker teker çözmekten çok daha zordur.Problemi daha küçük parçalara bölmek, her küçük problemin detaylı incenebileceği anlamına gelir.
 
@@ -14,7 +14,7 @@ Bir çalışanın haftalık ücreti, ücret oranına ve haftada çalışılan sa
 
 2-Bu saatlerden kaçının normal oranda ödeneceğini öğrenin.
 
-3-Bu saatlerden kaçının, varsa, fazla mesai oranında ödeneceğini öğrenin.
+3-Bu saatlerden kaçının, varsa fazla mesai oranında ödeneceğini öğrenin.
 
 4-Normal saatler için ödemeyi hesaplayın Fazla mesai saatleri için ödemeyi hesaplayın.
 
